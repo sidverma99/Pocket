@@ -1,8 +1,10 @@
 package com.example.pocket;
 
+import static android.Manifest.permission.CAMERA;
+import static android.Manifest.permission.READ_SMS;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                     } else{
                         Boolean fistTimeLoggedIn=sharedPreferences.getBoolean("fistTimeLoggedIn",true);
                         if(fistTimeLoggedIn){
-                            Dexter.withContext(getApplicationContext()).withPermission(Manifest.permission.CAMERA,Manifest.permission.READ_SMS).withListener(new MultiplePermissionsListener() {
+                            Dexter.withContext(getApplicationContext()).withPermissions(CAMERA,READ_SMS).withListener(new MultiplePermissionsListener() {
                                 @Override
                                 public void onPermissionsChecked(MultiplePermissionsReport multiplePermissionsReport) {
 
