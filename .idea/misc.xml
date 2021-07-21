@@ -7,6 +7,8 @@
         <entry key="app/src/main/res/layout/dashboard_activity.xml" value="0.3453125" />
         <entry key="app/src/main/res/layout/login_activity.xml" value="0.35054347826086957" />
         <entry key="app/src/main/res/layout/on_boarding_activity.xml" value="0.35054347826086957" />
+        <entry key="app/src/main/res/layout/otp_activity.xml" value="0.3423913043478261" />
+        <entry key="app/src/main/res/layout/passcode_activity.xml" value="0.20104166666666667" />
         <entry key="app/src/main/res/layout/registration_avtivity.xml" value="0.35054347826086957" />
       </map>
     </option>
